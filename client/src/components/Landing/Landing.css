@@ -1,0 +1,31 @@
+h1{
+    color: rgb(0, 131, 201);
+    font-size: 5rem;
+    text-align: center;
+}
+.landing{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.startBtn{
+    all: unset;
+    font-size: 2.5rem;
+    padding: 0.7rem;
+    background-color: rgb(215, 250, 248);
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+@media (min-width: 768px){
+    .landing h1{
+        font-size: 8rem;
+        margin-bottom: 1rem;
+    }
+    .startBtn{
+        width: 11rem;
+    }
+}

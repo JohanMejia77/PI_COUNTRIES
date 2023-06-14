@@ -1,0 +1,144 @@
+.detail_container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 195, 255);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 95vh;
+    border-radius: 20px;
+}
+.detail_container h3{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.flag_detail{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.btnClose{
+    all: unset;
+    background-color: red;
+    width: 5rem;
+    margin: 1rem auto;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.countryData{
+    color: white;
+}
+.data_container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.data_container h3{
+    font-size: 2.3rem;
+    text-align: center;
+}
+.countryData{
+    font-size: 1.2rem;
+}
+.activity_item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.activity_items{
+    width: 9rem;
+    height: 6rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    font-size: 0.8rem;
+}
+.activity_items span{
+    font-weight: 600;
+}
+.close_activity{
+    all: unset;
+    background-color:red;
+    width: 3.7rem;
+    height: 18px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .detail_container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        width: 95%;
+    }
+    .flag_detail{
+        width: 45%;
+        height: 60%;
+        margin-left: 3rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .btnClose{
+        font-size: 1.7rem;
+        background-color: red;
+        width: 7rem;
+        border-radius: 25px;
+        padding: 5px;
+    }
+    .countryData{
+        color: white;
+        text-align: center;
+        margin-left: 1rem;
+    }
+    .data_container{
+        height: 100%;
+        width: 45%;
+        display: flex;
+        margin-left: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .data_container h3{
+        font-size: 3.3rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .countryData{
+        font-size: 1.8rem;
+    }
+    .activities{
+        width: 90%;
+        height: 70%;
+        display: grid;
+        place-items: center;
+    }
+    .title_activities{
+        font-size: 2.4rem;
+    }
+    .activity_item{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0 0.7rem;
+    }
+    .activity_items{
+        width: 10rem;
+        height: 8rem;
+        font-size: 0.9rem;
+    }
+}

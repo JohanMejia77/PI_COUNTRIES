@@ -1,0 +1,62 @@
+.container_loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.loading{
+  font-size: 2rem;
+  color: #fbff00;
+  margin-top: 2rem;
+  text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+    
+}
+@media (min-width: 768px){
+  .loading{
+    font-size: 7rem;
+    color: #fbff00;
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+  }
+}
+.custom-loader {
+    width: 74px;
+    height: calc(26px*0.866 + 6px);
+    display: grid;
+  }
+  .custom-loader:before,
+  .custom-loader:after {
+    content: "";
+    grid-area: 1/1;
+    background:#766DF4;
+    --c1:conic-gradient(from 150deg at top   ,#000 60deg,#0000 0);
+    --c2:conic-gradient(from -30deg at bottom,#000 60deg,#0000 0);
+    --s:27px calc(27px*0.866);
+    clip-path: polygon(17px 0,calc(100% - 17px) 0,100% 100%,0 100%);
+    -webkit-mask:
+      var(--c1) left  6px top 4px,
+      var(--c2) center,
+      var(--c1) right 6px top 4px,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+    -webkit-mask-repeat:no-repeat;
+    animation: cu6 2s infinite both;
+  }
+  .custom-loader:after {
+    transform: rotate(180deg);
+    transform-origin: 50% 99%;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes cu6 {
+    0%    {-webkit-mask-size:0    0  ,0    0  ,0    0  ,auto}
+    8.33% {-webkit-mask-size:var(--s),0    0  ,0    0  ,auto}
+    16.67%{-webkit-mask-size:var(--s),var(--s),0    0  ,auto}
+    25%,
+    50%   {-webkit-mask-size:var(--s),var(--s),var(--s),auto}
+    58.33%{-webkit-mask-size:0    0  ,var(--s),var(--s),auto}
+    66.67%{-webkit-mask-size:0    0  ,0    0  ,var(--s),auto}
+    75%,
+    100%  {-webkit-mask-size:0    0  ,0    0  ,0    0  ,auto}
+  }

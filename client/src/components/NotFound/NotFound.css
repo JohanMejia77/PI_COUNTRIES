@@ -1,0 +1,60 @@
+.notFound {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 213, 0);
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.notFound h1{
+    color: rgb(255, 0, 0);
+    font-size: 6rem;
+}
+.notFound p{
+    color: black;
+    font-size: 2rem;
+}
+.home{
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(57, 255, 47);
+    margin-top: 1rem;
+    width: 10rem;
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+}
+@media (min-width: 768px){
+    .notFound{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+    .notFound h1{
+        font-size: 12rem;
+    }
+    .notFound p{
+        color: black;
+        font-size: 4rem;
+    }
+    .home{
+        width: 12rem;
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+}

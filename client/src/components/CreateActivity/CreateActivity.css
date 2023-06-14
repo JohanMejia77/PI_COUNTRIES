@@ -1,0 +1,107 @@
+.activity_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 195, 255);
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 2rem 1rem;
+}
+.activity_form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.input_activity{
+   all: unset;
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid black;
+   padding-bottom: 5px;
+}
+.select_season{
+    width: 60%;
+    height: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+.text_center{
+    text-align: center;
+}
+.select_country_activity{
+    width: 10rem;
+    height: 1.5rem;
+    display: grid;
+    place-items: center;
+}
+.btn_activity{
+    all: unset;
+    text-align: center;
+    padding: 5px;
+    margin-top: 1rem;
+    border-radius: 15px;
+    background-color: rgb(123, 255, 0);
+    width: 9rem;
+    cursor: pointer;
+}
+.countries_state{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(0, 119, 255);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.country_state{
+    color: white;
+    margin: 5px;
+}
+.error_message{
+    background-color: rgb(0, 255, 179);
+    padding: 5px;
+    border-radius: 10px;
+}
+.error_submit{
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+}
+.close_country{
+    all: unset;
+    background-color:red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.close_form{
+    all: unset;
+    text-align: center;
+    background-color: red;
+    width: 4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+@media (min-width: 768px){
+    .activity_container{
+        width: 30vw;
+        height: 90vh;
+    }
+}
